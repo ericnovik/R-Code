@@ -9,7 +9,7 @@ x <- rpois(n_sim, y)
 hist(x, freq = FALSE, col = 'grey', breaks = 40)
 lines(1:50, dnbinom(1:50, n, p), lwd = 2, col = "sienna")
 
-library(manipulate)
+require('manipulate')
 
 manipulate( 
 {
